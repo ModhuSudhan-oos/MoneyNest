@@ -1,0 +1,116 @@
+// === /public/privacy.html ===
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AI Tools Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AIHub</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/tools.html" class="hover:text-blue-600">All Tools</a>
+        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="/about.html" class="hover:text-blue-600">About</a>
+      </nav>
+      
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+          <i class="fas fa-moon text-gray-700 dark:text-yellow-400"></i>
+        </button>
+        <a href="/contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center">Privacy Policy</h1>
+      <p class="text-gray-500 dark:text-gray-400 mb-12 text-center">Last Updated: July 18, 2025</p>
+      
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <div class="prose dark:prose-invert max-w-none">
+          <h2>Introduction</h2>
+          <p>
+            AIHub ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, 
+            use, disclose, and safeguard your information when you visit our website and use our services.
+          </p>
+          
+          <h2>Information We Collect</h2>
+          <p>We may collect information about you in a variety of ways:</p>
+          <ul>
+            <li><strong>Personal Data:</strong> Email address, name, and other contact information when voluntarily submitted by you.</li>
+            <li><strong>Usage Data:</strong> Information about how you access and use our service, including your IP address, browser type, and pages visited.</li>
+            <li><strong>Cookies:</strong> We use cookies to enhance your experience and gather information about visitors and visits to our website.</li>
+          </ul>
+          
+          <h2>How We Use Your Information</h2>
+          <p>We use the information we collect in various ways, including to:</p>
+          <ul>
+            <li>Provide, operate, and maintain our website</li>
+            <li>Improve, personalize, and expand our website</li>
+            <li>Send you newsletters and marketing communications</li>
+            <li>Find and prevent fraud</li>
+          </ul>
+          
+          <h2>Sharing Your Information</h2>
+          <p>
+            We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties except:
+          </p>
+          <ul>
+            <li>Trusted third parties who assist us in operating our website</li>
+            <li>When required by law or to protect our rights</li>
+          </ul>
+          
+          <h2>Security of Your Information</h2>
+          <p>
+            We use administrative, technical, and physical security measures to protect your personal information. However, 
+            no method of transmission over the Internet or electronic storage is 100% secure.
+          </p>
+          
+          <h2>Your Data Protection Rights</h2>
+          <p>Depending on your location, you may have the following rights:</p>
+          <ul>
+            <li>The right to access – You have the right to request copies of your personal data.</li>
+            <li>The right to rectification – You have the right to request correction of any inaccurate information.</li>
+            <li>The right to erasure – You have the right to request that we erase your personal data.</li>
+          </ul>
+          
+          <h2>Changes to This Privacy Policy</h2>
+          <p>
+            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy 
+            Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.
+          </p>
+          
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, please contact us at 
+            <a href="mailto:privacy@aihub.com" class="text-blue-600">privacy@aihub.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
