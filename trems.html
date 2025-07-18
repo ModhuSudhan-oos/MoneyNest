@@ -1,0 +1,122 @@
+// === /public/terms.html ===
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - AI Tools Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AIHub</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/tools.html" class="hover:text-blue-600">All Tools</a>
+        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="/about.html" class="hover:text-blue-600">About</a>
+      </nav>
+      
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+          <i class="fas fa-moon text-gray-700 dark:text-yellow-400"></i>
+        </button>
+        <a href="/contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center">Terms of Service</h1>
+      <p class="text-gray-500 dark:text-gray-400 mb-12 text-center">Effective Date: July 18, 2025</p>
+      
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <div class="prose dark:prose-invert max-w-none">
+          <h2>1. Acceptance of Terms</h2>
+          <p>
+            By accessing or using the AIHub website ("Service"), you agree to be bound by these Terms of Service. 
+            If you disagree with any part of the terms, you may not access the Service.
+          </p>
+          
+          <h2>2. Description of Service</h2>
+          <p>
+            AIHub provides a directory of artificial intelligence tools and resources. We curate, organize, and present 
+            information about various AI tools to help users discover new solutions.
+          </p>
+          
+          <h2>3. User Responsibilities</h2>
+          <p>As a user of this Service, you agree to:</p>
+          <ul>
+            <li>Use the Service only for lawful purposes</li>
+            <li>Not engage in any activity that interferes with or disrupts the Service</li>
+            <li>Not attempt to access any restricted areas of the Service without authorization</li>
+          </ul>
+          
+          <h2>4. Intellectual Property</h2>
+          <p>
+            The Service and its original content, features, and functionality are and will remain the exclusive property 
+            of AIHub and its licensors. Our trademarks and trade dress may not be used in connection with any product or 
+            service without our prior written consent.
+          </p>
+          
+          <h2>5. Links to Other Websites</h2>
+          <p>
+            Our Service may contain links to third-party websites or services that are not owned or controlled by AIHub. 
+            We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any 
+            third-party websites or services.
+          </p>
+          
+          <h2>6. Termination</h2>
+          <p>
+            We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason 
+            whatsoever, including without limitation if you breach the Terms.
+          </p>
+          
+          <h2>7. Limitation of Liability</h2>
+          <p>
+            In no event shall AIHub, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for 
+            any indirect, incidental, special, consequential or punitive damages resulting from your access to or use of the Service.
+          </p>
+          
+          <h2>8. Disclaimer</h2>
+          <p>
+            Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. 
+            AIHub does not endorse or guarantee the quality, reliability, or suitability of any tools listed in our directory.
+          </p>
+          
+          <h2>9. Changes to Terms</h2>
+          <p>
+            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice 
+            of any changes by posting the new Terms on this page.
+          </p>
+          
+          <h2>10. Contact Us</h2>
+          <p>
+            If you have any questions about these Terms, please contact us at 
+            <a href="mailto:legal@aihub.com" class="text-blue-600">legal@aihub.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
