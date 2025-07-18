@@ -1,0 +1,171 @@
+// === /public/contact.html ===
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - AI Tools Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/contact.js" defer></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AIHub</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/tools.html" class="hover:text-blue-600">All Tools</a>
+        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="/about.html" class="hover:text-blue-600">About</a>
+      </nav>
+      
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+          <i class="fas fa-moon text-gray-700 dark:text-yellow-400"></i>
+        </button>
+        <a href="/contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Have questions, suggestions, or partnership inquiries? We'd love to hear from you!
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+          <h2 class="text-2xl font-bold mb-6">Send a Message</h2>
+          
+          <form id="contact-form">
+            <div class="mb-6">
+              <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+              <input type="text" id="name" required 
+                     class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800">
+            </div>
+            
+            <div class="mb-6">
+              <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+              <input type="email" id="email" required 
+                     class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800">
+            </div>
+            
+            <div class="mb-6">
+              <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+              <input type="text" id="subject" required 
+                     class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800">
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
+              <textarea id="message" rows="5" required 
+                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800"></textarea>
+            </div>
+            
+            <button type="submit" 
+                    class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition">
+              Send Message
+            </button>
+          </form>
+          
+          <div id="form-message" class="mt-4 text-center"></div>
+        </div>
+        
+        <div>
+          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+                  <i class="fas fa-envelope text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">Email</h3>
+                  <p class="text-gray-600 dark:text-gray-300">support@aihub.com</p>
+                  <p class="text-gray-600 dark:text-gray-300">partners@aihub.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+                  <i class="fas fa-map-marker-alt text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">Office</h3>
+                  <p class="text-gray-600 dark:text-gray-300">123 Innovation Drive</p>
+                  <p class="text-gray-600 dark:text-gray-300">San Francisco, CA 94107</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
+                  <i class="fas fa-clock text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg">Business Hours</h3>
+                  <p class="text-gray-600 dark:text-gray-300">Monday-Friday: 9am-5pm PST</p>
+                  <p class="text-gray-600 dark:text-gray-300">Saturday-Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-lg">How can I submit my AI tool to the directory?</h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Please send us a message using the contact form with details about your tool. Our team will review it and 
+                  get back to you within 3-5 business days.
+                </p>
+              </div>
+              
+              <div>
+                <h3 class="font-bold text-lg">Do you offer advertising opportunities?</h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Yes, we offer several advertising options. Please contact us at partners@aihub.com for our media kit and 
+                  advertising rates.
+                </p>
+              </div>
+              
+              <div>
+                <h3 class="font-bold text-lg">Can I suggest a feature or improvement?</h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Absolutely! We welcome all feedback and suggestions. Use the contact form to share your ideas with us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
