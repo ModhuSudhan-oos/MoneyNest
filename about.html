@@ -1,0 +1,117 @@
+// === /public/about.html ===
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - AI Tools Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AIHub</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/tools.html" class="hover:text-blue-600">All Tools</a>
+        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="/about.html" class="text-blue-600 font-medium">About</a>
+      </nav>
+      
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+          <i class="fas fa-moon text-gray-700 dark:text-yellow-400"></i>
+        </button>
+        <a href="/contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center">About AIHub</h1>
+      
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12">
+        <h2 class="text-2xl font-bold mb-6">Our Mission</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
+          At AIHub, our mission is to create the most comprehensive and accessible directory of artificial intelligence tools. 
+          We believe that AI technology should be available to everyone, regardless of technical expertise.
+        </p>
+        <p class="text-gray-600 dark:text-gray-300">
+          Founded in 2023, we've curated hundreds of AI tools across dozens of categories to help creators, developers, and 
+          businesses find the perfect solutions for their needs.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+          <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-check-circle text-3xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Rigorous Selection</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Every tool in our directory undergoes a thorough review process. We test functionality, evaluate user experience, 
+            and verify claims to ensure we only list high-quality solutions.
+          </p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+          <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-tags text-3xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Detailed Categorization</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            We organize tools into intuitive categories and tag them with relevant keywords to make discovery effortless. 
+            Whether you're looking for image generation or data analysis tools, you'll find what you need quickly.
+          </p>
+        </div>
+      </div>
+      
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <h2 class="text-2xl font-bold mb-6">Our Team</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-8">
+          We're a small but passionate team of AI enthusiasts, developers, and designers dedicated to building the best 
+          platform for discovering artificial intelligence tools.
+        </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
+            <div class="w-20 h-20 rounded-full bg-gray-200 dark:bg-gray-600 mb-4 mx-auto"></div>
+            <h3 class="text-lg font-bold text-center">Alex Morgan</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Founder & CEO</p>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
+            <div class="w-20 h-20 rounded-full bg-gray-200 dark:bg-gray-600 mb-4 mx-auto"></div>
+            <h3 class="text-lg font-bold text-center">Taylor Kim</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Lead Developer</p>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
+            <div class="w-20 h-20 rounded-full bg-gray-200 dark:bg-gray-600 mb-4 mx-auto"></div>
+            <h3 class="text-lg font-bold text-center">Jordan Patel</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Content Curator</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
