@@ -1,0 +1,72 @@
+// === /public/404.html ===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found - AI Tools Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AIHub</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/tools.html" class="hover:text-blue-600">All Tools</a>
+        <a href="/blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="/about.html" class="hover:text-blue-600">About</a>
+      </nav>
+      
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+          <i class="fas fa-moon text-gray-700 dark:text-yellow-400"></i>
+        </button>
+        <a href="/contact.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-32 flex flex-col items-center justify-center">
+    <div class="text-center max-w-2xl">
+      <div class="text-9xl font-bold text-blue-600 mb-6">404</div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Page Not Found</h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 mb-10">
+        Oops! The page you're looking for doesn't exist or has been moved. 
+        Try returning to the homepage or use the search below.
+      </p>
+      
+      <div class="max-w-xl mx-auto mb-10">
+        <form class="flex">
+          <input type="text" placeholder="Search for AI tools..." 
+                 class="flex-grow px-6 py-4 border border-gray-300 dark:border-gray-700 rounded-l-lg bg-white dark:bg-gray-800">
+          <button class="px-6 py-4 bg-blue-600 text-white rounded-r-lg">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      
+      <a href="/" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition">
+        Return to Homepage
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
